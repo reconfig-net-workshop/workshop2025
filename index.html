@@ -2,5 +2,716 @@
 <html lang="en">
 
 <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" 
+    content="">
+  <meta name="author" content="">
+
+  <title>Vishal Shrivastav &mdash; Purdue University</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css?version=6969" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/scrolling-nav.css?version=387" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Open Sans, nice font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,500,600,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Favion -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <style>
+    .badge{display:inline-block;padding:.5em .7em .5em .7em;font-size:15px;font-weight:600;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:5rem;
+      background-color:#808080;box-shadow: rgba(100, 100, 100, 0.25) 2px 2px 5px;font-family: 'Noto Sans', 'Helvetica Neue', 'Arial', sans-serif;}
+
+      .bss{
+
+      }
+      .bss:hover{
+        text-decoration:none;
+      }
+
+      .bs-callout {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 15px 0px 0px 0;
+        border: 0px solid;
+        border-left-width: 5px;
+        border-left-color: #888;
+        /*border: 0px solid #eee;*/
+        border-radius: 0px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+      }
+  </style>
+
+
+<style>
+/*! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com*/
+*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}
+
+html{-webkit-text-size-adjust:100%;font-feature-settings:normal;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}
+
+code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}
+
+small{font-size:80%}
+
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+
+sub{bottom:-.25em}
+
+sup{top:-.5em}
+
+table{border-collapse:collapse;border-color:inherit;text-indent:0}
+
+button,input,optgroup,select,textarea{font-feature-settings:inherit;color:inherit;font-family:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0}
+
+button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,object,svg,video{display:block;vertical-align:middle}video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }:root{--max-width:1200px}.bg-img{background-image:url(/images/bg.png);background-repeat:repeat;min-height:100%;min-width:100%}.limit-width{margin-left:auto;margin-right:auto;max-width:1200px;max-width:var(--max-width)}.menu-hamburger{--tw-bg-opacity:1;align-items:center;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));border-radius:25px;box-shadow:0 0 5px #6e839d;display:flex;flex-direction:column;height:50px;justify-content:center;margin-left:calc((min(1200px,100vw) - (min(1200px,100vw)*0.96))/2);margin-left:calc((min(var(--max-width),100vw) - (min(var(--max-width),100vw)*0.96))/2);margin-top:1em;opacity:1;padding-bottom:4px;position:fixed;transform:translateX(0);transition:opacity .7s ease-in-out .7s,transform .7s ease-in-out .7s;width:50px;z-index:20}.menu-hamburger:hover{box-shadow:0 0 10px #6e839d;cursor:pointer;scale:110%;transition:box-shadow 0s}.menu-hamburger.close{opacity:0;transform:translateX(-100px);transition:all .6s ease-in-out 0s}.menu-hamburger-line{background:#1d2e45;border-radius:10px;height:3px;margin-top:5px;width:25px}
+
+.nav-bar.show{height:3.5rem;margin-top:.6em;max-width:1200px;max-width:var(--max-width);opacity:1;transform:translateX(0)}.nxt-link-btn{--tw-border-opacity:1;--tw-text-opacity:1;align-items:center;border-color:#94a3b8;border-color:rgb(148 163 184/var(--tw-border-opacity));border-right-width:1.5px;color:#000;color:rgb(0 0 0/var(--tw-text-opacity));display:flex;height:100%;justify-content:center;text-align:center}@media (min-width:640px){.nxt-link-btn{font-size:.875rem;line-height:1.25rem}}@media (min-width:768px){.nxt-link-btn{font-size:1.125rem;line-height:1.75rem}}@media (min-width:1024px){.nxt-link-btn{font-size:1.25rem;line-height:1.75rem}}.nxt-link-btn{cursor:pointer;transition:.8s ease-in-out;vertical-align:middle}.nxt-link-btn:first-child{border-radius:15px 0 0 15px}.nxt-link-btn:last-child{border-radius:0 15px 15px 0;border-right-width:0}@media (min-width:640px){.nxt-link-btn:hover{font-size:1.1rem}}@media (min-width:768px){.nxt-link-btn:hover{font-size:1.2rem}}@media (min-width:1024px){.nxt-link-btn:hover{font-size:1.6rem}}.nxt-link-btn:hover{background:linear-gradient(90deg,#60bee9,transparent) #0ee9c1;color:#4b0670;font-weight:400}.nxt-link-btn:hover,.nxt-link-btn:not(:hover){transition:.2s ease-in-out}.nxt-link-btn.fade{scale:100%}.nav-bar-mobile button:hover{background:linear-gradient(90deg,#60bee9,transparent) #0ee9c1;color:#4b0670;z-index:1000}.mobile-menu-ham{--tw-bg-opacity:1;border-radius:25px;box-shadow:0 0 5px #6e839d;transition:width .4s linear .35s,border-radius .4s linear .35s;width:50px}.mobile-menu-ham,.mobile-menu-ham.show{background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));height:50px;margin-left:calc((min(1200px,100vw) - (min(1200px,100vw)*0.96))/2);margin-left:calc((min(var(--max-width),100vw) - (min(var(--max-width),100vw)*0.96))/2);margin-top:-3em;opacity:1;position:fixed;z-index:1000}.mobile-menu-ham.show{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-text-opacity:1;border-color:#64748b;border-color:rgb(100 116 139/var(--tw-border-opacity));border-radius:15px 15px 0 0;border-top-width:1px;border-width:1px;color:#000;color:rgb(0 0 0/var(--tw-text-opacity));padding:.75rem;transition:width .35s linear 0s,border-width .35s linear 0s;width:125px}.mobile-menu-buttons{border-color:#64748b;border-color:rgb(100 116 139/var(--tw-border-opacity));border-radius:0 0 15px 15px;height:0;margin-left:calc((min(1200px,100vw) - (min(1200px,100vw)*0.96))/2);margin-left:calc((min(var(--max-width),100vw) - (min(var(--max-width),100vw)*0.96))/2);opacity:0;position:fixed;transition:all .4s linear 0s;width:125px;z-index:1000}.mobile-menu-buttons,.mobile-menu-buttons.show{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));display:flex;flex-direction:column;margin-top:1px;transform:translateY(0)}.mobile-menu-buttons.show{border-color:#64748b;border-color:rgb(100 116 139/var(--tw-border-opacity));border-width:0 1px 1px;height:295px;opacity:1;transition:all .4s linear .35s}.mobile-button{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-text-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));border-color:#94a3b8;border-color:rgb(148 163 184/var(--tw-border-opacity));border-top-width:1px;color:#000;color:rgb(0 0 0/var(--tw-text-opacity));cursor:pointer;padding:.75rem;text-align:center}.mobile-button,.mobile-button:hover{z-index:1000}.mobile-button:hover{background:linear-gradient(90deg,#60bee9,transparent) #0ee9c1;color:#4b0670}.mobile-button1{border-width:0;opacity:0;transform:translateY(0);transition:transform .1s linear,opacity .1s linear}.mobile-button2{border-width:0;opacity:0;transform:translateY(-49px);transition:transform .15s linear,opacity .15s linear}.mobile-button3{border-width:0;opacity:0;transform:translateY(-98px);transition:transform .2s linear,opacity .2s linear}.mobile-button4{border-width:0;opacity:0;transform:translateY(-147px);transition:transform .25s linear,opacity .25s linear}.mobile-button5{border-width:0;opacity:0;transform:translateY(-198px);transition:transform .3s linear,opacity .3s linear}.mobile-button6{border-width:0;opacity:0;transform:translateY(-245px);transition:transform .35s linear,opacity .35s linear}.mobile-button1.show{margin-top:0;transition:transform .1s linear .35s}.mobile-button1.show,.mobile-button2.show{border-top-width:1px;opacity:1;transform:translateY(0)}.mobile-button2.show{transition:transform .15s linear .35s}.mobile-button3.show{transition:transform .2s linear .35s}.mobile-button3.show,.mobile-button4.show{border-top-width:1px;opacity:1;transform:translateY(0)}.mobile-button4.show{transition:transform .25s linear .35s}.mobile-button5.show{transition:transform .3s linear .35s}.mobile-button5.show,.mobile-button6.show{border-top-width:1px;opacity:1;transform:translateY(0)}.mobile-button6.show{border-radius:0 0 15px 15px;transition:transform .35s linear .35s,opacity .35s linear .35s}.banner-bg-img{margin-left:auto;margin-right:auto;margin-top:1em;width:100vw}@media (min-width:1024px){.banner-bg-img{width:100%}}.banner-bg-img{background-blend-mode:overlay;background-color:#535353;background-image:url(img/purdue-banner.jpeg);background-position:50% 90%;background-repeat:no-repeat;background-size:cover;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;height:calc(min(557px,max(.4 * 100vh,.5*100vw)))}.banner-font{--tw-text-opacity:1;color:#eab308;color:rgb(234 179 8/var(--tw-text-opacity));font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:calc(min(457px,max(.3 * 100vh,.38 * 100vw))*2.4*.05)}.banner-typewriter{animation:typing 2s steps(40),blink-caret 1.5s step-end 8000000 forwards;border-right:6px solid orange;letter-spacing:.1em;margin:0 auto;overflow:hidden;white-space:nowrap}.header-bg-img{background-color:#262f3d;background-repeat:no-repeat;background-size:cover;height:calc(min(100px,max(.4 * 100vh,.5*100vw)));margin-left:auto;margin-right:auto;margin-top:1em;width:100%;z-index:100}.seal-img{height:80px;margin-left:auto;margin-right:4%;margin-top:-2rem;margin-top:calc((min(100px,max(.4 * 100vh,.5*100vw)))*-1*.9);width:80px}.header-img-font{color:#d5e9ed;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:calc(min(max(.4 * 100vh,.3 * 100vw))*2*.05);font-weight:300}.main-page-projects-container{display:flex;flex-direction:row;flex-wrap:wrap;width:100%}.main-page-project-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 4px gray;flex:1 0 45%;height:auto;margin:1.5rem;opacity:0;scale:95%;transform:translateY(100px)}.main-page-project-div.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.news{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 8px rgba(5,20,36,0);box-shadow:1px 1px 4px gray;flex:1 0 45%;font-size:1rem;line-height:1.5rem;margin:1.5rem;opacity:0;scale:95%;transform:translateY(100px)}.news.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.main-page-video{box-shadow:0 0 5px #512d2d;margin:1.25rem auto 2.5rem;width:99.5%}.video-overlay{align-items:center;display:flex;height:100%;justify-content:center;position:absolute;text-align:center;width:100%}.play_button{-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);background:linear-gradient(hsla(152,5%,49%,.85),hsla(0,0%,40%,.75));border-radius:60px;box-shadow:0 0 2px #433d49;height:120px;width:120px}.play_button:hover{scale:95%;transition:all .3s ease-in-out}.play_button:not(:hover){scale:75%;transition:all .3s ease-in-out}.playshape{background:linear-gradient(#c7e5c7 10%,#b2d4fd 90%);border-radius:10px;-webkit-clip-path:polygon(35% 25%,80% 50%,35% 75%);clip-path:polygon(35% 25%,80% 50%,35% 75%);height:100%;width:100%}.main-page-main-headers{font-size:1.875rem;line-height:2.25rem;text-align:center}.main-page-main-divs,.main-page-main-headers{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity))}.main-page-main-divs{border-radius:.125rem;box-shadow:1px 1px 8px rgba(5,20,36,0);font-size:1rem;line-height:1.5rem;margin:.5rem auto 3.5rem;width:100%}.main-page-project-header{font-weight:700;padding:1rem 1.5rem;text-align:center}.main-page-project-content{padding-bottom:1.5rem;padding-left:1.5rem;padding-right:1.5rem;text-align:justify}.timeline{margin-left:1.5rem;margin-right:1.5rem;position:relative}.timeline:before{--tw-border-opacity:1;border-color:#334155;border-color:rgb(51 65 85/var(--tw-border-opacity));border-left-width:2px;content:"";height:96%;left:2px;position:absolute;top:14px}.entry-container{align-items:center;display:flex;padding-bottom:1rem}.entry{margin-left:0}.date{font-style:italic;font-weight:300}.date:after{content:" — "}.congrat-name:before{content:" Congratulations, "}.congrat-name{--tw-gradient-from:#22d3ee var(--tw-gradient-from-position);--tw-gradient-to:rgba(34,211,238,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to);--tw-gradient-to:#a78bfa var(--tw-gradient-to-position);-webkit-background-clip:text;background-clip:text;background-image:linear-gradient(to right,#22d3ee var(--tw-gradient-from-position),#a78bfa var(--tw-gradient-to-position));background-image:linear-gradient(to right,var(--tw-gradient-stops));color:transparent;font-weight:600}.congrat-icon:after{content:"🥳🎉"}.square{background:#2fd5ef;content:"";height:12px;left:-3px;position:absolute;width:12px}.publication-project-container{opacity:0;scale:95%;transform:translateY(100px)}.publication-project-container.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.publication-main-headers{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity));font-size:1.25rem;line-height:1.75rem;margin-bottom:1rem;margin-left:.5rem;margin-top:2.5rem;text-align:left}@media (min-width:768px){.publication-main-headers{font-size:1.5rem;line-height:2rem}}.publication-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 8px rgba(5,20,36,0);box-shadow:1px 1px 4px gray;font-size:1rem;line-height:1.5rem;margin-top:.5rem;padding-bottom:.5rem;padding-left:.5rem;padding-top:1.25rem}
+
+.team-group-container{margin-left:.5rem;margin-right:auto;width:96%}
+@media (min-width:640px){.team-group-container{padding-top:0}}
+.team-group-container{opacity:0;scale:95%;transform:translateY(100px)}
+.team-group-container.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.team-group-header{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity));font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1.875rem;font-weight:100;letter-spacing:-.05em;line-height:2.25rem;margin-bottom:1rem;margin-top:2.5rem;text-align:center}@media (min-width:768px){.team-group-header{font-size:2.25rem;line-height:2.5rem}}
+.team-members-container{-moz-column-gap:10%;column-gap:10%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-evenly;}
+
+.alumni-members-container{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 8px rgba(5,20,36,0);box-shadow:1px 1px 4px gray;font-size:1rem;line-height:1.5rem;margin-top:.5rem;padding-bottom:.5rem;padding-left:.5rem;padding-top:1.25rem}.team-member-name{font-size:1.5rem;font-weight:600;line-height:2rem;margin-top:.5rem}.team-member-name,.team-member-title{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;letter-spacing:-.05em}.team-member-title{font-size:1.25rem;font-weight:300;line-height:1.75rem}.team-member-img{border-radius:10%;max-height:200px;width:auto}
+
+.projects-container{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;width:100%}.project-container-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 4px gray;flex:1 0 45%;margin:1.5rem;opacity:0;padding-bottom:2rem;scale:95%;transform:translateY(100px)}.project-container-div.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.project-content{border-radius:.125rem;padding:.5rem 1.5rem;text-align:justify}@media (min-width:768px){.project-content{--tw-bg-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));max-height:13.5em}}.project-content{line-height:1.5em;overflow:scroll}.more{bottom:0;cursor:pointer;float:right;font-style:italic;font-weight:300;margin-bottom:2px;position:absolute;right:10px;text-align:right;transition:all .5s ease-in-out;width:100px}.more:hover{--tw-text-opacity:1;color:#3730a3;color:rgb(55 48 163/var(--tw-text-opacity));font-weight:800}.loadMore{cursor:pointer;font-style:italic;font-weight:300;text-align:center;transition:all .5s ease-in-out}.loadMore:hover{--tw-text-opacity:1;color:#3730a3;color:rgb(55 48 163/var(--tw-text-opacity));font-weight:800}.bounce{animation:bounceAnime 1s linear infinite}.opensource-section-container{display:flex;flex-wrap:wrap;justify-content:center;padding-left:4%;padding-right:4%;width:100%}.opensource-section-container-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;flex:0 1 90%;margin:1.5rem}@media (min-width:640px){.opensource-section-container-div{flex:1 0 40%}}@media (min-width:1024px){.opensource-section-container-div{flex:1 0 26%}}.opensource-section-container-div{box-shadow:1px 1px 4px gray;opacity:0;scale:95%;transform:translateY(100px)}.opensource-section-container-div.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.subpages-title{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity));font-size:1.875rem;font-weight:600;line-height:2.25rem;padding-bottom:1.5rem;padding-top:2.5rem;text-align:center}@media (min-width:768px){.subpages-title{padding-top:5rem}}.subpages-section-container-div{--tw-bg-opacity:1;background-color:#f1f5f9;background-color:rgb(241 245 249/var(--tw-bg-opacity));border-radius:.125rem;box-shadow:1px 1px 4px gray;flex:1 0 44%;margin:1.5rem;opacity:0;scale:95%;scroll-margin-top:180px;transform:translateY(100px)}.subpages-section-container-div.show-up{opacity:1;scale:100%;transform:translateY(0);transition:all 1.5s ease}.subpages-section-title-container-div{font-size:2.25rem;line-height:2.5rem;padding-left:3rem;padding-right:3rem;padding-top:2rem}.subpages-section-title{--tw-border-opacity:1;border-bottom-width:2px;border-color:#cbd5e1;border-color:rgb(203 213 225/var(--tw-border-opacity));padding-bottom:.5rem;text-align:center}@media (min-width:768px){.subpages-section-title{text-align:left}}.subpages-section-content{padding:2rem 3rem 1.5rem;text-align:justify}.code-block{--tw-bg-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));border-radius:.375rem;padding-left:1.25rem}pre{word-wrap:break-word;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap}code,pre{white-space:pre-line}.mark-section{--tw-text-opacity:1;color:#1d4ed8;color:rgb(29 78 216/var(--tw-text-opacity));transition:all .7s ease-out}.marker{--tw-bg-opacity:1;background-color:#94a3b8;background-color:rgb(148 163 184/var(--tw-bg-opacity));height:100%;opacity:0;position:absolute;width:0}.invisible{visibility:hidden}.fixed{position:fixed}.relative{position:relative}.sticky{position:sticky}.top-0{top:0}.z-10{z-index:10}.z-20{z-index:20}.float-right{float:right}.m-6{margin:1.5rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-3{margin-bottom:.75rem}.ml-2{margin-left:.5rem}.mt-10{margin-top:2.5rem}.mt-\[-3\.9rem\]{margin-top:-3.9rem}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.flex{display:flex}.table{display:table}.hidden{display:none}.h-16{height:4rem}.h-\[0\]{height:0}.min-h-screen{min-height:100vh}.w-\[20\%\]{width:20%}.w-\[96\%\]{width:96%}.flex-\[1_0_25\%\]{flex:1 0 25%}.flex-grow{flex-grow:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.resize{resize:both}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-evenly{justify-content:space-evenly}.gap-10{gap:2.5rem}.border-t-\[1\.5px\]{border-top-width:1.5px}.border-red-500{--tw-border-opacity:1;border-color:#ef4444;border-color:rgb(239 68 68/var(--tw-border-opacity))}.border-slate-300{--tw-border-opacity:1;border-color:#cbd5e1;border-color:rgb(203 213 225/var(--tw-border-opacity))}.bg-\[var\(--primary-color\)\]{background-color:#ededed;background-color:var(--primary-color)}.px-12{padding-left:3rem;padding-right:3rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-\[30px\]{padding-left:30px;padding-right:30px}.py-4{padding-bottom:1rem;padding-top:1rem}.pb-12{padding-bottom:3rem}.pb-2{padding-bottom:.5rem}.pb-3{padding-bottom:.75rem}.pb-5{padding-bottom:1.25rem}.pb-6{padding-bottom:1.5rem}.pb-\[0\.01rem\]{padding-bottom:.01rem}.pb-\[150px\]{padding-bottom:150px}.pb-\[30px\]{padding-bottom:30px}.pb-\[3px\]{padding-bottom:3px}.pl-1{padding-left:.25rem}.pl-2{padding-left:.5rem}.pl-6{padding-left:1.5rem}.pt-1{padding-top:.25rem}.pt-10{padding-top:2.5rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-justify{text-align:justify}.font-mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem}.text-lg,.text-xl{line-height:1.75rem}.text-xl{font-size:1.25rem}.font-bold{font-weight:700}.font-extralight{font-weight:200}.font-light{font-weight:300}.font-semibold{font-weight:600}.capitalize{text-transform:capitalize}.italic{font-style:italic}.tracking-tight{letter-spacing:-.025em}.tracking-tighter{letter-spacing:-.05em}.text-sky-900{--tw-text-opacity:1;color:#0c4a6e;color:rgb(12 74 110/var(--tw-text-opacity))}.text-slate-600{--tw-text-opacity:1;color:#475569;color:rgb(71 85 105/var(--tw-text-opacity))}.opacity-0{opacity:0}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}@keyframes bounceAnime{25%{transform:translateY(2px)}50%{transform:translateY(0)}75%{transform:translateY(-2px)}}@keyframes typing{0%{width:0}to{border-color:transparent;width:100%}}@keyframes blink-caret{0%,to{border-color:transparent}50%{border-color:orange}}@keyframes gradient{0%{background-position:0 50%}50%{background-position:100% 50%}to{background-position:0 50%}}:root{--primary-color:#ededed;--secondary-color:#1e293b}@media (min-width:640px){.sm\:nav-bar{--tw-border-opacity:1;--tw-bg-opacity:1;background-color:#e2e8f0;background-color:rgb(226 232 240/var(--tw-bg-opacity));border-color:#64748b;border-color:rgb(100 116 139/var(--tw-border-opacity));border-radius:15px 15px 15px 15px;border-width:1px;box-shadow:1px 0 10px #7b848e;display:grid;grid-template-columns:7% 15.5%15.5% 15.5% 15.5% 15.5% 15.5%;height:2rem;margin-left:calc((min(1200px,100vw) - (min(1200px,100vw)*0.96))/2);margin-left:calc((min(var(--max-width),100vw) - (min(var(--max-width),100vw)*0.96))/2);margin-top:1.5em;opacity:0;position:fixed;transform:translateX(-101%);transition:all 1s ease-in-out;width:calc(min(1200px,100vw)*.96);width:calc(min(var(--max-width),100vw)*.96);z-index:20}.sm\:nav-bar,.sm\:nav-bar.show{max-width:1200px;max-width:var(--max-width)}.sm\:nav-bar.show{height:3.5rem;margin-top:.6em;opacity:1;transform:translateX(0)}.sm\:visible{visibility:visible}.sm\:invisible{visibility:hidden}.sm\:block{display:block}}@media (min-width:768px){.md\:hidden{display:none}.md\:pt-20{padding-top:5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:font-normal{font-weight:400}.md\:tracking-normal{letter-spacing:0}}@media (min-width:1024px){.lg\:my-10{margin-bottom:2.5rem;margin-top:2.5rem}.lg\:border-r-2{border-right-width:2px}.lg\:px-\[80px\]{padding-left:80px;padding-right:80px}}
+</style>
+
+<style>
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+</style>
+
 </head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a  style="font-weight:400;" class="navbar-brand page-scroll" href="index.html">Vishal Shrivastav</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+          </li>
+          <li><a  style="font-weight:400;" class="page-scroll" href="index.html#intro">Home</a></li>
+          <li><a  style="font-weight:400;" class="page-scroll" href="index.html#about">About Me</a></li>
+          <li><a  style="font-weight:400;" class="page-scroll" href="index.html#news">News</a></li>
+          <li><a  style="font-weight:400;" class="page-scroll" href="index.html#teaching">Teaching</a></li>
+          <li><a  style="font-weight:400;" class="page-scroll" href="index.html#research">Research</a></li>
+          <!--<li><a  style="font-weight:400;" class="page-scroll" href="#page-top">Group</a></li>-->
+          <!--<li><a  style="font-weight:400;" class="page-scroll" href="alumni.html">Alumni</a></li>-->
+          <li><a  style="font-weight:400;" class="page-scroll" href="index.html#publications">Publications</a></li>
+          <li><a  style="font-weight:400;" class="page-scroll" href="index.html#service">Service</a></li>
+        </ul>
+
+        <!--<ul class="nav navbar-nav navbar-right">
+          <a href="https://www.purdue.edu"><img src="img/purdue-logo.png" height="50" align="right" style="border: 0px;"></a>
+        </ul>-->
+        <ul class="nav navbar-nav navbar-right">
+          <li style="padding-right:6px;padding-left:15px;margin-top:13px;"><img src="img/purdue-logo.svg.png" height="25"></li>
+          <li><a style="font-weight:400;padding-right:0px;" class="navbar-brand page-scroll" href="https://www.purdue.edu/" target="_blank">Purdue University</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!--<div id="__nuxt">
+    <div id="doc" class="bg-[var(--primary-color)] bg-img">
+      <div class="banner-bg-img flex flex-col justify-center items-center">
+        <div class="banner-font flex justify-center">
+          <div>
+            <p class="banner-typewriter tracking-tight md:tracking-normal">Research Group</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+
+
+<!-- alternatingly label section with "even" or "odd" -->
+
+<section id="intro" class="even-section">
+  <div class="container" style="padding-right:15px;padding-left:15px;">
+    <!--<div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">-->
+          <!--<p style="margin-top:-40px;text-align: left;"><a href="https://www.purdue.edu" target="_blank"><img  src="img/purdue-logo.png" width="250"></a></p>
+          <p style="font-size:44px;margin-top:-25px;padding-bottom: 7.5px;font-weight: 700;border-top: 1px dashed;"></p>-->
+          <p style="font-weight:700;font-size:24.75px;text-align:left;margin-top:-13px;color:#111;">Elmore Family School of Electrical and Computer Engineering&nbsp;&middot; Purdue&nbsp;University </p>
+          <p style="border-bottom: 1px dashed;padding-top: 13px;"></p>
+          <p style="font-size:38px;margin-top:20px;padding-bottom: 20px;font-weight: 700;text-shadow: 2px 2px #dedede;"><font style="color:#2E86C1"><u>N</u></font>etworked <font style="color:#DE3163"><u>S</u></font>ystems and <font style="color:#4CBB17"><u>H</u></font>ardware Research Group</p>
+          <p style="font-size:21px;padding-bottom: 25px;"><i class="fa fa-user" style="padding-right: 4px;font-size: 30px;"></i> Led by <a href="index.html" style="border-bottom:1px dotted;">Prof. Vishal Shrivastav</a></p>
+          <!--<p style="margin-top: -14px;font-size:17px;padding-bottom: 12px;">Assistant Professor of <a href="https://engineering.purdue.edu/ECE" target="_blank" style="font-weight: 700;">ECE</a> at <a href="https://www.purdue.edu/" target="_blank" style="font-weight: 700;">Purdue&nbsp;University</a></p>
+          <p style="padding: 27.5px 0 30px 0"><img style="display:block;margin-left:auto;margin-right:auto;" src="img/pie.png" width="325"></p>-->
+
+          <div class="bs-callout">
+              <table style="margin-top:-3px;">
+                <tbody>
+          
+                 <tr valign=top>
+                    <!--<td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>-->
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <b style="font-size: 18px;">Prospective Students:</b> If you want to join our research group, please <a href="mailto:vshriva@purdue.edu">email</a> your CV with your research interests and apply to Purdue's <a href="https://www.purdue.edu/gradschool/admissions/how-to-apply/index.html?_ga=2.136994928.1145749734.1696568337-1436000790.1675876241" target="_blank">Graduate Degree Program</a> --- in your application, please select <a href="https://engineering.purdue.edu/ECE" target="_blank">Electrical and Computer Engineering</a> as the graduate major and <a href="https://engineering.purdue.edu/ECE/Research/Areas/CompEngr" target="_blank">Computer Engineering</a> as the area of interest within the major.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="padding-bottom: 5px;"></p>
+
+            <!--<p style="padding-top: 40px;font-size: 26px;padding-bottom: 15px;"><i class="fa fa-book" aria-hidden="true" style="padding-right: 1px;font-size: 27px;"></i> <a href="index.html#publications" style="font-weight: 700;border-bottom:1px dotted;">Publications</a></p>-->
+
+        <!--</div>               
+      </div>
+    </div>-->
+  </div>
+</section>
+
+<section id="current" class="odd-section">
+  <div class="container">
+    <div class="row">
+      <!--<div class="col-lg-10 col-lg-offset-1">-->
+        <div class="page-header">
+          <h1 style="font-weight:400;font-size: 38px;padding-top: 20px;padding-bottom: 11px;"><i class="fa fa-group" style="padding-right: 5px;"></i> Students</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          <!--<p style="padding-bottom: 0px;"><font style="font-size:20px;font-weight:700;">Current</font></p>-->
+          <div id="__nuxt"><!--[-->
+            <div id="doc" class="bg-[var(--primary-color)] bg-img">
+              <div class="team-group-container show-up">
+                <!--<h1 class="team-group-header">Graduate Students</h1>-->
+                <div class="team-members-container">
+                  <!--<div class="flex-[1_0_25%]">
+                    <div class="flex flex-col text-center items-center m-6">-->
+                  <div>
+                    <div class="text-center m-6">
+                      <img class="team-member-img" src="img/jason.jpg">
+                      <p style="padding-top: 5px;"><a href="https://lei56.github.io" target="_blank">Jason Lei</a></p>
+                      <p>Ph.D. 2022&ndash;now</p>
+                      <p><i class="fa fa-trophy" aria-hidden="true" style="font-size: 18.5px;padding-right:0.25px"></i> Ross Fellow</p>
+                    </div>
+                  </div>
+
+                  <!--<div class="flex-[1_0_25%]">
+                    <div class="flex flex-col text-center items-center m-6">-->
+                  <div>
+                    <div class="text-center m-6">
+                      <img class="team-member-img" src="img/weigao.jpg">
+                      <p style="padding-top: 5px;"><a href="https://wegul.github.io" target="_blank">Weigao Su</a></p>
+                      <p>Ph.D. 2022&ndash;now</p>
+                      <p>(co-chair: <a href="https://www.cs.purdue.edu/homes/fahmy/" target="_blank">Prof. Fahmy</a>)</p>
+                    </div>
+                  </div>
+                  
+                  <!--<div class="flex-[1_0_25%]">
+                    <div class="flex flex-col text-center items-center m-6">-->
+                  <div>
+                    <div class="text-center m-6">
+                      <img class="team-member-img" src="img/pil.jpeg">
+                      <p style="padding-top: 5px;"><a href="https://www.linkedin.com/in/pil-jae-jang-26a869289/" target="_blank">Pil Jae Jang</a></p>
+                      <p>Ph.D. 2023&ndash;now</p>
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <!--<div class="flex-[1_0_25%]">
+                    <div class="flex flex-col text-center items-center m-6">-->
+                  <div>
+                    <div class="text-center m-6">
+                      <img class="team-member-img" src="img/dan.jpeg">
+                      <p style="padding-top: 5px;"><a href="https://www.linkedin.com/in/danmani/" target="_blank">Dan Mani Binu</a></p>
+                      <p>Ph.D. 2024&ndash;now</p>
+                      <p></p>
+                    </div>
+                  </div>
+                  
+                  <!--<div class="flex-[1_0_25%]">
+                    <div class="flex flex-col text-center items-center m-6">-->
+                  <!--<div>
+                    <div class="text-center m-6">
+                      <img class="team-member-img" src="img/usman.jpeg">
+                      <p style="padding-top: 5px;"><a href="https://www.linkedin.com/in/usman-jafri/" target="_blank">Usman Jafri</a></p>
+                      <p>Ph.D. 2021&ndash;now</p>
+                      <p>(chair: <a href="https://engineering.purdue.edu/~sanjay" target="_blank">Prof. Rao</a>)</p>
+                    </div>
+                  </div>-->
+                  <!--<div class="flex-[1_0_25%]">
+                    <div class="flex flex-col text-center items-center m-6">-->
+                  <div>
+                    <div class="text-center m-6">
+                      <img class="team-member-img" src="img/pranav.jpeg">
+                      <p style="padding-top: 5px;"><a href="https://www.linkedin.com/in/psrisank/" target="_blank">Pranav Srisankar</a></p>
+                      <p>M.S. 2024&ndash;now</p>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<table style="margin-top:0px;">
+          <col width="1%">
+          <col width="90%">
+          <tbody>
+
+           <tr valign=top>
+              <td style="padding:1px 9px 0px 0px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:15px">&#9679;</td>
+              <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #e9e9e9;text-align:left;">
+                <a href="https://www.linkedin.com/in/danmani/" target="_blank">Dan Mani Binu</a>, Ph.D.
+              </td>
+            </tr>
+            
+           <tr valign=top>
+              <td style="padding:1px 9px 0px 0px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:15px">&#9679;</td>
+              <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #e9e9e9;text-align:left;">
+                <a href="https://www.linkedin.com/in/pil-jae-jang-26a869289/" target="_blank">Pil Jae Jang</a>, Ph.D.
+              </td>
+            </tr>
+
+            <tr valign=top>
+              <td style="padding:1px 9px 0px 0px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:15px">&#9679;</td>
+              <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #e9e9e9;text-align:left;">
+                <a href="https://wegul.github.io" target="_blank">Weigao Su</a>, Ph.D. (co-chair: Prof. Fahmy)
+              </td>
+            </tr>
+
+            <tr valign=top>
+              <td style="padding:1px 9px 0px 0px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:15px">&#9679;</td>
+              <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #e9e9e9;text-align:left;">
+                <a href="https://lei56.github.io" target="_blank">Jason Lei</a>, Ph.D.
+              </td>
+            </tr>
+
+            <tr valign=top>
+              <td style="padding:1px 9px 0px 0px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:15px">&#9679;</td>
+              <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #e9e9e9;text-align:left;">
+                <a href="https://www.linkedin.com/in/usman-jafri/" target="_blank">Usman Jafri</a>, Ph.D. (chair: Prof. Rao)
+              </td>
+            </tr>
+
+            
+            <tr valign=top>
+              <td style="padding:1px 9px 0px 0px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:15px;">&#9679;</td>
+              <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #e9e9e9;text-align:left;">
+                <a href="https://www.linkedin.com/in/psrisank/" target="_blank">Pranav Srisankar</a>, M.S.
+              </td>
+            </tr>
+
+          </tbody>
+        </table>-->
+
+        <!--<p style="padding-bottom: 5px;padding-top: 15px;"><font style="font-size:28px;font-weight:400;">Alumni</font></p>
+          <table style="margin-top:0px;">
+          <col width="1%">
+          <col width="90%">
+          <tbody>
+
+           <tr valign=top>
+              <td style="padding:1px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;">1.</td>
+              <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #e9e9e9;text-align:left;">
+                <a href="https://www.linkedin.com/in/mnoumanabbasi/" target="_blank">Nouman Abbasi</a>, M.S. 2023 (non-thesis).<br>
+                First job: Software Engineer at Hive AI
+              </td>
+            </tr>
+
+          </tbody>
+        </table>-->
+
+        <p style="margin-bottom:-25px;"></p>
+
+          </div>
+        </div>
+      <!--</div>-->
+    </div>
+  </div>
+</section>
+
+<section id="current" class="odd-section">
+  <div class="container">
+    <div class="row">
+      <!--<div class="col-lg-10 col-lg-offset-1">-->
+        <div class="page-header">
+          <h1 style="font-weight:400;font-size: 38px;padding-top: 20px;padding-bottom: 9px;"><i class="fa fa-graduation-cap" style="padding-right: 1px;font-size: 37px;"></i> Alumni</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p><b style="font-size:25px;">Master</b></p>
+            <table style="margin-top:10px;">
+            <col width="1%">
+            <col width="90%">
+            <tbody>
+
+             <tr valign=top>
+                <td style="padding:1px 7px 0px 10px;border-bottom:0px solid #e9e9e9;color:#2a2a2a;font-size:16px;font-weight:500;">1.</td>
+                <td style="padding:0px 0px 0px 0px;border-bottom:0px solid #e9e9e9;text-align:left;">
+                  <a href="https://www.linkedin.com/in/mnoumanabbasi/" target="_blank">Nouman Abbasi</a>, M.S. 2023 (non-thesis).<br>
+                  First job: Software Engineer at Hive AI.
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        <p style="margin-bottom:15px;"></p>
+
+          </div>
+        </div>
+      <!--</div>-->
+    </div>
+  </div>
+</section>
+
+<section id="news" class="even-section">
+  <div class="container">
+    <div class="row">
+      <!--<div class="col-lg-10 col-lg-offset-1">-->
+        <div class="page-header" style="border-bottom: 0px solid #eee;">
+          <h2 style="font-weight:400;font-size:38px;padding-top: 25px;padding-bottom: 0px;"><i class="fa fa-lightbulb-o" aria-hidden="true" style="padding-right: 5px;font-size: 41px;"></i> Student News</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">04/2025</font><br><br> Weigao Su presented his <a href="papers/edm_2025.pdf">paper</a> <a class="bs2" href="papers/edm_2025.pdf"><i class="fa fa-file-pdf-o" style="font-size: 17px;padding:0 0.25px 0 .25px;" aria-hidden="true"></i></a> <font style="font-weight: 600;">"EDM: An Ultra-Low Latency Ethernet Fabric for Memory Disaggregation"</font> at <a href="https://www.asplos-conference.org/asplos2025/" target="_blank">ASPLOS</a> conference in Rotterdam, Netherlands.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">10/2024</font><br><br> Weigao Su's <a href="papers/edm_2025.pdf">paper</a> <a class="bs2" href="papers/edm_2025.pdf"><i class="fa fa-file-pdf-o" style="font-size: 17px;padding:0 0.25px 0 .25px;" aria-hidden="true"></i></a> <font style="font-weight: 600;">"EDM: An Ultra-Low Latency Ethernet Fabric for Memory Disaggregation"</font> accepted to <a href="https://www.asplos-conference.org/asplos2025/" target="_blank">ASPLOS</a>.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">08/2024</font><br><br> <!--<i class="fa fa-user" aria-hidden="true" style="font-size: 18px;"></i>--> Dan Mani Binu and <!--<i class="fa fa-user" aria-hidden="true" style="font-size: 18px;"></i>--> Pranav Srisankar joined the group as a Ph.D. and Master (thesis) student respectively</a>.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">05/2024</font><br><br> Jason Lei will spend the summer as an <i class="fa fa-briefcase" aria-hidden="true" style="font-size:17.5px;padding:0 0.25px 0 .25px;"></i> intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank">Microsoft Research Lab</a> in Redmond, Washington, USA.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">04/2024</font><br><br> Jason Lei presented his <a href="papers/seer_2024.pdf">paper</a> <a class="bs2" href="papers/seer_2024.pdf"><i class="fa fa-file-pdf-o" style="font-size: 17px;padding:0 0.25px 0 .25px;" aria-hidden="true"></i></a> <font style="font-weight: 600;">"Seer: Enabling Future-Aware Online Caching in Networked Systems"</font> <!--and Usman Jafri presented his <a href="papers/leo_2024.pdf">paper</a> <a class="bs2" href="papers/leo_2024.pdf"><i class="fa fa-file-pdf-o" style="font-size: 17px;padding:0 0.25px 0 .25px;" aria-hidden="true"></i></a> <font style="font-weight: 600;">"Leo: Online ML-based Traffic Classification at Multi-Terabit Line Rate"</font>--> at <a href="https://www.usenix.org/conference/nsdi24" target="_blank">NSDI</a> conference in Santa Clara, California, USA.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">02/2024</font><br><br> Weigao Su presented the <a href="papers/fast_2024.pdf">poster</a> <a class="bs2" href="papers/fast_2024.pdf"><i class="fa fa-file-pdf-o" style="font-size: 17px;padding:0 0.25px 0 .25px;" aria-hidden="true"></i></a> <font style="font-weight: 600;">"Rack-Scale Memory Disaggregation over Ethernet"</font> at <a href="https://www.usenix.org/conference/fast24" target="_blank">FAST</a> conference in Santa Clara, California, USA.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">01/2024</font><br><br> Weigao Su's work <a class="bs2" href="papers/fast_2024.pdf"><i class="fa fa-file-pdf-o" style="font-size: 17px;padding:0 0.25px 0 .25px;" aria-hidden="true"></i></a> <font style="font-weight: 600;">"Rack-Scale Memory Disaggregation over Ethernet"</font> accepted as a poster to <a href="https://www.usenix.org/conference/fast24" target="_blank">FAST</a>.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">12/2023</font><br><br> Jason Lei's <a href="papers/seer_2024.pdf">paper</a> <a class="bs2" href="papers/seer_2024.pdf"><i class="fa fa-file-pdf-o" style="font-size: 17px;padding:0 0.25px 0 .25px;" aria-hidden="true"></i></a> <font style="font-weight: 600;">"Seer: Enabling Future-Aware Online Caching in Networked Systems"</font> <!--and Usman Jafri's <a href="papers/leo_2024.pdf">paper</a> <a class="bs2" href="papers/leo_2024.pdf"><i class="fa fa-file-pdf-o" style="font-size: 17px;padding:0 0.25px 0 .25px;" aria-hidden="true"></i></a> <font style="font-weight: 600;">"Leo: Online ML-based Traffic Classification at Multi-Terabit Line Rate"</font>--> accepted to <a href="https://www.usenix.org/conference/nsdi24" target="_blank">NSDI</a>.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">08/2023</font><br><br> <!--<i class="fa fa-user" aria-hidden="true" style="font-size: 18px;"></i>--> Pil Jae Jang joined the group as a Ph.D. student.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">05/2023</font><br><br> <i class="fa fa-graduation-cap" aria-hidden="true" style="font-size: 18.5px;padding-right:0px;"></i> Nouman Abbasi graduated with an M.S. (non-thesis). Nouman will join <a href="https://thehive.ai" target="_blank">Hive AI</a> in Seattle, Washington, USA.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">01/2023</font><br><br> <!--<i class="fa fa-user" aria-hidden="true" style="font-size: 18px;"></i>--> Weigao Su joined the group as a Ph.D. student.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">08/2022</font><br><br> <!--<i class="fa fa-user" aria-hidden="true" style="font-size: 18px;"></i>--> Jason Lei joined the group as a Ph.D. student. Jason was awarded the prestigious <i class="fa fa-trophy" aria-hidden="true" style="font-size: 19px;padding:0 0.25px 0 .25px;"></i> <a href="https://www.purdue.edu/academics/ogsps/fellowship/funding-resources-for-students/fellowships/managed-fellowships/recruitment-fellowships.html" target="_blank">Ross Fellowship</a>.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bs-callout">
+              <table style="margin-top:-2.5px;">
+                <col width="1%">
+                <col width="90%">
+                <tbody>
+          
+                 <tr valign=top>
+                    <td style="border-bottom:0px solid #e9e9e9;"><span class="dot" style="margin-left: -15px;"></span></td>
+                    <td style="border-bottom:0px solid #e9e9e9; padding-left: 20px; padding-right: 15px;">
+                      <font style="font-weight: 400;font-size: 20px;">08/2021</font><br><br> <!--<i class="fa fa-user" aria-hidden="true" style="font-size: 18px;"></i>--> Nouman Abbasi joined the group as a Master (non-thesis) student.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+          
+        <!--<div class="collapsible">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bs-callout">
+              <ul style="list-style-type: none;">
+                <li style="margin:0px 0 0px 0px">
+                  <font style="font-weight: 600;">Extending Optimal Oblivious Reconfigurable Networks to all N.</font>
+                </li>
+              </ul>
+            </div>
+          </div>-->
+
+              
+            </div>
+          </div>
+        </div>
+
+      <!--</div>-->
+    </div>
+  </div>
+</section>
+
+
+
+
+<hr style="margin-bottom: 19px;">
+
+
+<footer id="footer" class="even-section-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        © 2025 Vishal Shrivastav            
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
+<!-- Collapsible JavaScript -->
+<script src="javascripts/scale.fix.js"></script>
+<script>
+  document.querySelectorAll(".collapsible").forEach(function(current) {
+
+  let toggler = document.createElement("div");
+  toggler.className = "toggler";
+  current.appendChild(toggler);
+
+  toggler.addEventListener("click", function(e) {
+      current.classList.toggle("open");
+    }, false);
+
+  });
+</script>
+
+<script type="application/json" id="__NUXT_DATA__" data-ssr="true" data-src="/_payload.json">[{"state":1,"_errors":3,"serverRendered":5,"path":6,"prerenderedAt":7},["Reactive",2],{},["Reactive",4],{},true,"/",1730395468529]</script><script>window.__NUXT__={};window.__NUXT__.config={public:{content:{locales:[],defaultLocale:"",integrity:1730395454410,experimental:{stripQueryParameters:false,clientDB:false},respectPathCase:false,api:{baseURL:"/api/_content"},navigation:{fields:[]},tags:{p:"prose-p",a:"prose-a",blockquote:"prose-blockquote","code-inline":"prose-code-inline",code:"prose-code",em:"prose-em",h1:"prose-h1",h2:"prose-h2",h3:"prose-h3",h4:"prose-h4",h5:"prose-h5",h6:"prose-h6",hr:"prose-hr",img:"prose-img",ul:"prose-ul",ol:"prose-ol",li:"prose-li",strong:"prose-strong",table:"prose-table",thead:"prose-thead",tbody:"prose-tbody",td:"prose-td",th:"prose-th",tr:"prose-tr"},highlight:false,wsUrl:"",documentDriven:false,host:"",trailingSlash:false,anchorLinks:{depth:4,exclude:[1]}}},app:{baseURL:"/",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script><script type="module" src="purdue-isl.github.io_files/entry.01c64da1.js" crossorigin=""></script>
+
+</body>
+
 </html>
+
